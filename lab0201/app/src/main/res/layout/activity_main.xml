@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/currentTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="64dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Текущая погода в Москве:"/>
+
+    <Button
+        android:id="@+id/button_current_tmp"
+        android:layout_width="145dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/black"
+        android:text="Текущая температура"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentTemperature" />
+
+    <Button
+        android:id="@+id/cities"
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@color/black"
+        android:text="Погода в городах"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="152dp"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
